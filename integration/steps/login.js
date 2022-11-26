@@ -15,7 +15,7 @@ When('user enter {string} and {string}',(username,password)=>{
 
 })
 Then('error message will be displayed',()=>{
-        LoginPage.clickLoginButton()
+        LoginPage.submit()
         cy.fixture('test-data.json').then(testData=>{
                 LoginPage.elements.getErrorMessage().should('have.text',testData.error_message)             
         })
