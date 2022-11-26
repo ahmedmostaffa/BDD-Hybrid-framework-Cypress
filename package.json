@@ -1,0 +1,44 @@
+{
+  "name": "d",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "index.js",
+  "scripts": {
+    "run": "cypress open",
+    "runHeadlessChrome": "cypress run --headless --browser chrome"
+  },
+  "cypress-cucumber-preprocessor": {
+    "step_definitions": "cypress/integration/steps/"
+  },
+  "author": "ahmed-mustafa",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^11.1.0",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "cypress-mochawesome-reporter": "^3.2.3",
+    "cypress-xpath": "^2.0.1"
+  },
+  "env": {
+    "db": {
+      "host": "localhost",
+      "user": "root",
+      "password": "",
+      "database": "database"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahmedmostaffa/BDD-framework-cypress.git"
+  },
+  "keywords": [
+    "test"
+  ],
+  "bugs": {
+    "url": "https://github.com/ahmedmostaffa/BDD-framework-cypress/issues"
+  },
+  "homepage": "https://github.com/ahmedmostaffa/BDD-framework-cypress#readme",
+  "dependencies": {
+    "cypress-mysql": "^1.0.0",
+    "cypress-plugin-api": "^2.6.0"
+  }
+}
