@@ -16,6 +16,7 @@ class HomePage{
         this.elements.shoppingCart().click();
         return this;
     }
+    
 
 
 }
