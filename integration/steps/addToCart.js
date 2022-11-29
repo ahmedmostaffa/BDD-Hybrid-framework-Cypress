@@ -23,5 +23,8 @@ When('user select all the products',()=>{
 })
 Then('All the selected products are present',()=>{
     HomePage.clickOnCart()
-    CartPage.elements.products().should('have.length',6)
+    
+})
+Then('the count of the selected items is {int}',(count)=>{
+    CartPage.elements.products().should('have.length',count)
 })

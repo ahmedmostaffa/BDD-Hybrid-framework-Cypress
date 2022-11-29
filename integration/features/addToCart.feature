@@ -10,6 +10,7 @@ Background: preconditions steps (run before every scenario)
 Scenario: user add multiple products to cart
     Given home page is displayed
     When user select all the products
-    Then All the selected products are present   
+    Then All the selected products are present 
+    And the count of the selected items is 6   
 
     
