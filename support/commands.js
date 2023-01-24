@@ -10,8 +10,14 @@
 // ***********************************************************
 
 // Import commands.js using ES2015 syntax:
+import LoginPage from '../integration/pages/LoginPage'
 import './commands'
-require('cypress-xpath');
+
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
+Cypress.Commands.add('doLogin',(username,paswword)=>{
+    LoginPage.setUsername(username)
+                .setPassword(paswword)
+                .submit()
+})

@@ -1,0 +1,110 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-12-13T15:26:36.687Z",
+    "end": "2022-12-13T15:26:46.008Z",
+    "duration": 9321,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "cee013f4-d896-4c7c-9504-b5ae80daf15e",
+      "title": "",
+      "fullFile": "cypress\\integration\\tests\\intercept.spec.js",
+      "file": "cypress\\integration\\tests\\intercept.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "088144c9-1e6d-4bea-af38-8a51576272f7",
+          "title": "test intercept command ",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "test 1",
+              "fullTitle": "test intercept command  test 1",
+              "timedOut": null,
+              "duration": 5234,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.intercept({\n  url: '**/entries',\n  method: 'GET'\n}).as('handleFlakiness');\ncy.visit('https://www.demoblaze.com/');\ncy.wait('@handleFlakiness').its('response.statusCode').should('eq', 200);",
+              "err": {},
+              "uuid": "2e563a35-16b1-48ec-a7ec-90dc73d3706c",
+              "parentUUID": "088144c9-1e6d-4bea-af38-8a51576272f7",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "2e563a35-16b1-48ec-a7ec-90dc73d3706c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 5234,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress\\report\\.jsons",
+        "charts": true,
+        "embeddedScreenshots": true,
+        "reportPageTitle": "custom-title",
+        "inlineAssets": true,
+        "saveAllAttempts": false,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

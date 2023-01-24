@@ -1,0 +1,167 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-12-13T15:26:04.710Z",
+    "end": "2022-12-13T15:26:25.523Z",
+    "duration": 20813,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "34e6e418-6aad-4052-bff2-60c0a0d4c8e1",
+      "title": "",
+      "fullFile": "cypress\\integration\\tests\\innerText.spec.js",
+      "file": "cypress\\integration\\tests\\innerText.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "925afce5-3002-4eaf-848e-b061d0742cdf",
+          "title": "suite 1 ",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "get page header using then",
+              "fullTitle": "suite 1  get page header using then",
+              "timedOut": null,
+              "duration": 5674,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('span.title').then(innerText => {\n  const getInnertext = innerText.text();\n  cy.log(getInnertext);\n});",
+              "err": {},
+              "uuid": "64b8c482-16e3-4849-bd7e-08c45a78d5ba",
+              "parentUUID": "925afce5-3002-4eaf-848e-b061d0742cdf",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test 2",
+              "fullTitle": "suite 1  test 2",
+              "timedOut": null,
+              "duration": 3487,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.log(this.pageHeader);",
+              "err": {},
+              "uuid": "25832fe5-ae59-4006-aa5b-b1445cc3d81b",
+              "parentUUID": "925afce5-3002-4eaf-848e-b061d0742cdf",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test 3",
+              "fullTitle": "suite 1  test 3",
+              "timedOut": null,
+              "duration": 3861,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect(this.pageHeader).to.be.equal('Products');",
+              "err": {},
+              "uuid": "4d5e2399-c142-45dc-a803-4c467a3a3f40",
+              "parentUUID": "925afce5-3002-4eaf-848e-b061d0742cdf",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "invoke alias",
+              "fullTitle": "suite 1  invoke alias",
+              "timedOut": null,
+              "duration": 3875,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('span.title').invoke('text').as('pageHeader');",
+              "err": {},
+              "uuid": "858cd00e-cec0-4738-abbe-c9e8b5b7a07e",
+              "parentUUID": "925afce5-3002-4eaf-848e-b061d0742cdf",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "64b8c482-16e3-4849-bd7e-08c45a78d5ba",
+            "25832fe5-ae59-4006-aa5b-b1445cc3d81b",
+            "4d5e2399-c142-45dc-a803-4c467a3a3f40",
+            "858cd00e-cec0-4738-abbe-c9e8b5b7a07e"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 16897,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress\\report\\.jsons",
+        "charts": true,
+        "embeddedScreenshots": true,
+        "reportPageTitle": "custom-title",
+        "inlineAssets": true,
+        "saveAllAttempts": false,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

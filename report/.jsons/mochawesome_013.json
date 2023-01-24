@@ -1,0 +1,114 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2022-12-13T15:25:48.106Z",
+    "end": "2022-12-13T15:25:48.373Z",
+    "duration": 267,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "328c2d53-16c7-48ca-80f4-8d5a698e12e2",
+      "title": "",
+      "fullFile": "cypress\\integration\\tests\\database-test.spec.js",
+      "file": "cypress\\integration\\tests\\database-test.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "8d46caa1-f268-43a3-b40b-70871182a31a",
+          "title": "Database testing",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "select data from user table",
+              "fullTitle": "Database testing select data from user table",
+              "timedOut": null,
+              "duration": 191,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      {\n        \"title\": \"Failed screenshot\",\n        \"value\": \"\\\\cypress\\\\integration\\\\tests\\\\database-test.spec.js\\\\Database testing -- select data from user table (failed).png\"\n      }\n    ]\n  ]\n}",
+              "code": "cy.task(\"queryDb\", \"select * from users\").then(result => {\n  expect(result).to.equal(\"\");\n});",
+              "err": {
+                "message": "CypressError: `cy.task('queryDb')` failed with the following error:\n\n> Cannot read properties of undefined (reading 'isServer')\n\nhttps://on.cypress.io/api/task",
+                "estack": "CypressError: `cy.task('queryDb')` failed with the following error:\n\n> Cannot read properties of undefined (reading 'isServer')\n\nhttps://on.cypress.io/api/task\n    at <unknown> (http://localhost:65052/__cypress/runner/cypress_runner.js:146131:78)\n    at tryCatcher (http://localhost:65052/__cypress/runner/cypress_runner.js:11327:23)\n    at Promise._settlePromiseFromHandler (http://localhost:65052/__cypress/runner/cypress_runner.js:9262:31)\n    at Promise._settlePromise (http://localhost:65052/__cypress/runner/cypress_runner.js:9319:18)\n    at Promise._settlePromise0 (http://localhost:65052/__cypress/runner/cypress_runner.js:9364:10)\n    at Promise._settlePromises (http://localhost:65052/__cypress/runner/cypress_runner.js:9440:18)\n    at _drainQueueStep (http://localhost:65052/__cypress/runner/cypress_runner.js:6034:12)\n    at _drainQueue (http://localhost:65052/__cypress/runner/cypress_runner.js:6027:9)\n    at ../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:65052/__cypress/runner/cypress_runner.js:6043:5)\n    at Async.drainQueues (http://localhost:65052/__cypress/runner/cypress_runner.js:5913:14)\nFrom Your Spec Code:\n    at Context.eval (webpack:///./cypress/integration/tests/database-test.spec.js:10:11)\n\nFrom Node.js Internals:\n  TypeError: Cannot read properties of undefined (reading 'isServer')\n      at new ConnectionConfig (F:\\Cypress-framework\\node_modules\\mysql2\\lib\\connection_config.js:77:29)\n      at Object.exports.createConnection (F:\\Cypress-framework\\node_modules\\mysql2\\index.js:10:35)\n      at queryTestDb (F:\\Cypress-framework\\cypress.config.js:7:30)\n      at queryDb (F:\\Cypress-framework\\cypress.config.js:52:18)\n      at invoke (C:\\Users\\ammabrouk\\AppData\\Local\\Cypress\\Cache\\11.1.0\\Cypress\\resources\\app\\node_modules\\@packages\\server\\lib\\plugins\\child\\run_plugins.js:256:16)\n      at <unknown> (C:\\Users\\ammabrouk\\AppData\\Local\\Cypress\\Cache\\11.1.0\\Cypress\\resources\\app\\node_modules\\@packages\\server\\lib\\plugins\\util.js:59:14)\n      at tryCatcher (C:\\Users\\ammabrouk\\AppData\\Local\\Cypress\\Cache\\11.1.0\\Cypress\\resources\\app\\node_modules\\bluebird\\js\\release\\util.js:16:23)\n      at Function.Promise.attempt.Promise.try (C:\\Users\\ammabrouk\\AppData\\Local\\Cypress\\Cache\\11.1.0\\Cypress\\resources\\app\\node_modules\\bluebird\\js\\release\\method.js:39:29)\n      at Object.wrapChildPromise (C:\\Users\\ammabrouk\\AppData\\Local\\Cypress\\Cache\\11.1.0\\Cypress\\resources\\app\\node_modules\\@packages\\server\\lib\\plugins\\util.js:58:23)\n      at RunPlugins.taskExecute (C:\\Users\\ammabrouk\\AppData\\Local\\Cypress\\Cache\\11.1.0\\Cypress\\resources\\app\\node_modules\\@packages\\server\\lib\\plugins\\child\\run_plugins.js:262:10)\n      at RunPlugins.execute (C:\\Users\\ammabrouk\\AppData\\Local\\Cypress\\Cache\\11.1.0\\Cypress\\resources\\app\\node_modules\\@packages\\server\\lib\\plugins\\child\\run_plugins.js:182:21)\n      at EventEmitter.<anonymous> (C:\\Users\\ammabrouk\\AppData\\Local\\Cypress\\Cache\\11.1.0\\Cypress\\resources\\app\\node_modules\\@packages\\server\\lib\\plugins\\child\\run_plugins.js:279:12)\n      at EventEmitter.emit (node:events:527:28)\n      at process.<anonymous> (C:\\Users\\ammabrouk\\AppData\\Local\\Cypress\\Cache\\11.1.0\\Cypress\\resources\\app\\node_modules\\@packages\\server\\lib\\plugins\\util.js:33:22)\n      at process.emit (node:events:527:28)\n      at emit (node:internal/child_process:938:14)\n      at processTicksAndRejections (node:internal/process/task_queues:84:21)",
+                "diff": null
+              },
+              "uuid": "7cff5628-185d-4713-a013-5f82033810b8",
+              "parentUUID": "8d46caa1-f268-43a3-b40b-70871182a31a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "7cff5628-185d-4713-a013-5f82033810b8"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 191,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress\\report\\.jsons",
+        "charts": true,
+        "embeddedScreenshots": true,
+        "reportPageTitle": "custom-title",
+        "inlineAssets": true,
+        "saveAllAttempts": false,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

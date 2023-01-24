@@ -4,7 +4,7 @@ const HomePage =require("../pages/HomePage")
 const LoginPage =require('../pages/LoginPage') 
 
 Given('user open swgaLabs login page',()=>{
-        cy.visit("/");
+        cy.visit("https://www.saucedemo.com/");
 })
 
 When('user enter {string} and {string}',(username,password)=>{  

@@ -1,0 +1,113 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-01-17T15:19:06.475Z",
+    "end": "2023-01-17T15:19:07.912Z",
+    "duration": 1437,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f1e5d7b1-6f19-4ba5-ab63-b444798e95ae",
+      "title": "",
+      "fullFile": "cypress\\integration\\steps\\_VOIS_api.spec.js",
+      "file": "cypress\\integration\\steps\\_VOIS_api.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "02e405e7-cf79-4791-af73-3590b023100a",
+          "title": "api test extract comments",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "todos requests",
+              "fullTitle": "api test extract comments todos requests",
+              "timedOut": null,
+              "duration": 1062,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.api({\n  method: \"GET\",\n  url: baseURL + 'todos'\n}).then(res => {\n  if (res.body.completed == false) {\n    console.log(res.body.userId);\n    cy.log(res.body.userId);\n  }\n});",
+              "err": {},
+              "uuid": "0ac2dbfa-063a-4d98-a540-f85a1d3089cd",
+              "parentUUID": "02e405e7-cf79-4791-af73-3590b023100a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "0ac2dbfa-063a-4d98-a540-f85a1d3089cd"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1062,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress\\report\\.jsons",
+        "reportFileName": "report",
+        "charts": true,
+        "embeddedScreenshots": true,
+        "reportPageTitle": "custom-title",
+        "inlineAssets": true,
+        "saveAllAttempts": false,
+        "HTMLAllCollection": true,
+        "JSON": false,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

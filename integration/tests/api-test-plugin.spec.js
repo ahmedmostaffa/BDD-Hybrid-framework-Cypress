@@ -8,9 +8,10 @@ describe('API tests', () => {
     const baseURL = 'https://simple-books-api.glitch.me'
     before('API authentiaction', function () {
         var data = {
-            "clientEmail": "addajfafdadadda@gmail.com",
-            "clientName": "hsiahfafdadfadadfafafadadadadagwng"
+            "clientEmail": "addajfhdafdadadda@gmail.com",
+            "clientName": "hsiahfafdhdhdhadfadadfafafadadadadagwng"
         }
+        
         cy.fixture('test-body.json').then((data_body) => {
             cy.api({
                 url: baseURL + API_Authentication,

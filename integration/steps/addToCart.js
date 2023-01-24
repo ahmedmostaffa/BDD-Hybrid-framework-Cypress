@@ -4,7 +4,7 @@ const LoginPage =require('../pages/LoginPage')
 const CartPage=require("../pages/CartPage")
 
 Given('user open login page',()=>{
-    cy.visit('/')
+    cy.visit('https://www.saucedemo.com/')
 })
 When('user enter {string} and {string}',(username,password)=>{
     LoginPage.setUsername(username)
