@@ -1,15 +1,13 @@
 
-
 const { describe } = require("mocha");
-
 describe('API tests', () => {
     var API_Authentication = '/api-clients/'
     var Get_orders = '/orders/'
     const baseURL = 'https://simple-books-api.glitch.me'
     before('API authentiaction', function () {
         var data = {
-            "clientEmail": "addajfhdafdadadda@gmail.com",
-            "clientName": "hsiahfafdhdhdhadfadadfafafadadadadagwng"
+            "clientEmail": "john"+Math.random()+"@gmail.com",
+            "clientName": "eni"+Math.random()
         }
         
         cy.fixture('test-body.json').then((data_body) => {
